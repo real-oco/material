@@ -1,0 +1,140 @@
+@__StackTrace__:
+
+@ -> {ignore lint lines}
+
+1. @ReactJS
+ReactJS is a JavaScript library for building user interfaces, especially for single-page applications where you need a fast and interactive user experience.
+
+# Component-Based Architecture
+UI is built using reusable components, which manage their own state and logic.
+
+# JSX (JavaScript XML)
+Allows you to write HTML-like syntax directly in JavaScript, making UI code more readable and expressive.
+
+# Virtual DOM
+React uses a virtual DOM to efficiently update the real DOM by only changing the parts that need to be updated, improving performance.
+
+# Unidirectional Data Flow
+Data flows from parent to child components, making state management more predictable.
+
+# Declarative UI
+You describe what the UI should look like based on the state, and React handles the rendering and updating.
+
+Alternatives: Vue, Angular, svelte, @NextJS.
+
+2. @NodeJS
+Node.js is an open-source, cross-platform JavaScript runtime environment that allows you to run JavaScript outside of the browser, typically on a server.
+
+# Built on Chrome’s V8 Engine
+Fast JavaScript execution thanks to the same engine that powers the Chrome browser.
+
+# Non-blocking I/O & Event-Driven
+Perfect for handling many concurrent connections without slowing down.
+
+# Single Programming Language (JavaScript)
+You can build both frontend and backend with JavaScript.
+
+# Huge Ecosystem (NPM)
+Comes with NPM (Node Package Manager) — the largest ecosystem of open-source libraries.
+
+# Cross-platform
+Runs on Windows, macOS, Linux, etc.
+
+Alternatives: @Deno, Bun. 
+
+3. @ExpressJS
+Express is a minimal and flexible Node.js web application framework that provides tools and features to build web servers and APIs easily.
+
+It's like a lightweight wrapper around Node's core http module that simplifies the process of routing, handling requests, and managing middleware.
+
+# Routing System
+Handle different HTTP methods (GET, POST, etc.) and URLs with ease.
+
+# Middleware Support
+Functions that run before the final request handler (for logging, auth, parsing JSON, etc.).
+
+# Request & Response Utilities
+Helpers like @req.query, @req.params, @res.json(), and @res.status().
+
+# Static File Serving
+Serve HTML, CSS, JS, and images directly from a public folder.
+
+# Integration with Templating Engines
+Like EJS, Pug, or Handlebars for dynamic HTML pages.
+
+# Easy API Creation
+Commonly used to build REST APIs and backend services.
+
+Alternatives: @Fastify, Koa, @NestJS.
+
+4. MongoDB
+# MongoDB is a NoSQL database designed to store and manage large amounts of unstructured or semi-structured data using a document-oriented model instead of traditional tables and rows (like SQL databases).
+# MongoDB stores data in JSON-like documents (technically called BSON – Binary JSON), which are flexible, human-readable, and easy to work with in JavaScript-based environments like Node.js.
+# MongoDB Atlas – Cloud-based MongoDB service.
+Compass – GUI for MongoDB (visualize and manage data).
+Mongoose – ODM (Object-Document Mapper) library to interact with MongoDB in Node.js easily.
+
+Alternatives: Couchbase, Firebase, Amazon @DocumentDB.
+
+5. Redis
+# Redis (Remote Dictionary Server) is an open-source, in-memory data store that is commonly used as a database, cache.
+# It’s known for being extremely fast, because it stores data in memory (RAM) instead of on disk like traditional databases.
+# Think of Redis as a super-fast key-value store where you can store and retrieve data in milliseconds. It’s widely used to speed up applications by caching frequently used data.
+
+Alternatives: Memcached, @Hazelcast.
+
+6. React @Tanstack Query:
+# React Query (also known as @TanStack Query) is a powerful data-fetching and state management library for React that makes it easy to:
+
+# Fetch, cache, and update remote data (like from APIs)
+
+# Keep your UI in sync with the server
+
+# Reduce boilerplate code compared to using @useEffect and @useState manually
+
+Alternatives: Apollo Client, RTK Query.
+
+7. Stream SDK:
+Stream offers a set of ready-made APIs and tools that help developers add real-time features like:
+# Chat API
+# Video & Audio Calling API
+
+Stream SDK provides APIs that handle all the complex parts of real-time messaging, video calling, and social feeds, so developers don't have to build them from scratch.
+
+Alternatives: Twilio, Agora.
+
+8. Recoil
+Recoil is a state management library for React that makes it easier to manage and share data (called "state") across different parts of your app — especially when multiple components need to access or update the same data.
+
+# Atom - A piece of shared state (like a global @useState).
+# Selector - A derived/computed value (like calculated totals or filters).
+# @RecoilRoot - A provider that enables Recoil in your app
+
+Alternatives: Redux Toolkit, @Zustand.
+
+9. @Shadcn
+@shadcn/@ui is a collection of beautifully designed and accessible UI components built with:
+
+1. Tailwind CSS
+2. Radix UI primitives (Provides core functionality like keyboard navigation, trap focus, etc which are not styled).
+3. Fully compatible with React
+
+Alternatives: Chakra UI, Material UI, Radix UI.
+
+10. JDBC
+JDBC stands for Java Database Connectivity.
+It is an API (Application Programming Interface) in Java that allows Java applications to interact with databases.
+
+Alternatives: JPA (Java Persistence API), Hibernate.
+
+11. MySQL
+MySQL is an open-source relational database management system (RDBMS).
+It stores data in tables made up of rows and columns, and you use SQL (Structured Query Language) to manage that data.
+
+Alternatives: PostgreSQL, MariaDB, SQLite.
+
+12. Redux Toolkit
+Redux Toolkit is the official, recommended way to write Redux logic.
+It simplifies the process of using Redux by reducing boilerplate code and improving developer experience.
+
+Alternatives: @Zustand, Recoil.

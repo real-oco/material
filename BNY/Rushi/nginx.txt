@@ -1,0 +1,11 @@
+51.20.67.163
+sudo nginx -t
+sudo systemctl reload nginx
+ssh -i "key-pair-one.pem" ubuntu@51.20.67.163
+sudo nano /etc/nginx/sites-available/url-shortener-lb
+
+live log 
+sudo tail -f /var/log/nginx/access.log
+
+error log
+sudo tail -f /var/log/nginx/error.log

@@ -1,0 +1,47 @@
+
+// add column
+alter table table_name
+add column_name data_type;
+
+// drop column 
+alter table table_name
+drop column column_name;
+
+// rename column
+alter table table_name
+rename column old_column_name to new_column_name;
+
+// modify data_type
+alter table table_name
+modify column column_name data_type;
+
+// add constraints
+ALTER TABLE Persons
+ADD UNIQUE (ID);
+
+ALTER TABLE Persons
+ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);
+
+// functions
+// 1 based indexing
+substring(column_name, start, end)
+instr(column_name, '...') // case insensitive
+rtrim(column_name);
+ltrim(column_name);
+length(column_name) // prints the length of string
+replace(column_name, value_to_replace, value_to_replace_with)
+mod(value1, value2) // value1 % value2
+
+select curdate();
+select now();
+
+select * from table_name limit offset, search_space;
+
+find 5th highest salary:
+
+select * from table_name limit 4, 1; 
+
+nth:
+
+select * from table_name limit n - 1, 1;
+

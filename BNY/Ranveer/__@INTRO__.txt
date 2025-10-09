@@ -1,0 +1,21 @@
+__@INTRO__
+
+Thank you for the opportunity to introduce myself.
+
+My name is Ranveer @Arakharao, and I’m currently pursuing a B.Tech in Electronics and Telecommunication at VJTI, Mumbai. Prior to this, I completed my HSC from @Mauli Jr. College of Science, Akola, and my SSC from G.S. Convent, Akola.
+
+Alongside my academics, I’ve developed a strong interest in full-stack web development. Over the past year, I’ve built and deployed several projects using the MERN stack, gaining hands-on experience in building responsive UIs, optimizing React apps, and designing efficient backend APIs.
+
+Two of my notable projects include:
+
+PUCK – an online manga reading platform
+
+@EnterAct – a real-time video and audio calling app with a collaborative code editor
+
+In addition to JavaScript-based development, I’ve also built a Java-based mini banking system called @JVault, using JDBC and MySQL.
+
+I’ve also participated in mentorship programs and web development-focused events, where I had the opportunity to collaborate with peers and learn from experienced mentors.
+
+Outside of programming, my hobbies include watching anime, reading manga, and playing chess.
+
+That was a brief overview about me. Considering my skills and experience, I believe I’d be a strong fit for this role. Thank you.

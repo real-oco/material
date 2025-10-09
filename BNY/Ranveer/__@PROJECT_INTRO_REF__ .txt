@@ -1,0 +1,86 @@
+1. Intro
+
+JVault is a mini banking system operated through a Command-Line Interface (CLI) that provides essential features such as crediting funds, debiting funds, transferring money, and checking account balance. It also implements the ACID properties of transactions to ensure reliability and consistency in all operations.
+
+2. Situation / Task
+
+My aim with JVault was to gain hands-on experience with Java’s core features, particularly exception handling and object-oriented programming (OOP), while building a functional application. I also focused on learning how to use the Java JDBC API to interact with SQL databases and implement transaction management following the ACID properties.
+
+3. Flow
+
+The application begins with an authentication screen where the user can:
+
+Register – Create a new account if they do not have one.
+
+Login – Access the system if they already have an account.
+
+Exit – Close the application.
+
+Registration Process
+When registering, the user must provide:
+
+Username
+
+Email
+
+Password
+
+The application:
+
+Validates the provided credentials on the client side (format checks, password strength, etc.) before sending them to the database.
+
+Ensures both the email and username are unique before storing credentials in the SQL database.
+
+Upon successful registration:
+
+If the user already has a bank account, the details are displayed.
+
+If not, the system prompts them to create a new bank account, requiring:
+
+Initial deposit amount
+
+Security PIN
+
+The system then generates a unique account number automatically via the database.
+
+Post-Login Features
+Once authenticated, the user can view their account details and choose from:
+
+Debit Money – Withdraw funds from their account.
+
+Credit Money – Deposit funds into their account.
+
+Transfer Money – Send funds to another account by specifying the receiver’s account number.
+
+Check Balance – View the current balance.
+
+For security, before performing any transaction, the user must re-enter their security PIN.
+
+Transaction Handling
+During transfer, the user specifies the receiver’s bank account number.
+
+All transaction logic and authentication logic are implemented using the Java JDBC API.
+
+The system adheres to ACID properties to ensure Atomicity, Consistency, Isolation, and Durability of all transactions.
+
+
+Connection connection = DriverManager.getConnection(SQL_URI, SQL_USERNAME, SQL_PASSWORD)
+Statement statement = connection.createStatement();
+ResultSet res = statement.executeQuery("query");
+
+while(res.next()) {
+	res.getInt("column_name");
+	res.getString("column_name");
+}
+
+int affect = statement.executeUpdate("query"); 
+
+
+Connection connection = DriverManager.getConnection(SQL_URI, SQL_USERNAME, SQL_PASSWORD)
+PreparedStatement preparedStatement = connection.preparedStatement("query??");
+preparedStatement.setString(1, "value1");
+preparedStatement.setInt(2, 100);
+
+preparedStatement.executeQuery();
+
+
